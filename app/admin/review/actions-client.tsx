@@ -26,7 +26,7 @@ export function ReviewActions({ processorId }: { processorId: string }) {
 
   if (done) {
     return (
-      <span className="text-xs px-3 py-1.5 rounded-md font-semibold shrink-0"
+      <span className="inline-block text-center text-xs px-3 py-2 rounded-md font-semibold shrink-0 w-full sm:w-auto"
             style={{ background: done === "approved" ? "rgba(5,150,105,0.10)" : "rgba(239,68,68,0.10)",
                      color: done === "approved" ? "#059669" : "#DC2626" }}>
         {done === "approved" ? "✓ Approved" : "✗ Rejected"}
@@ -35,11 +35,11 @@ export function ReviewActions({ processorId }: { processorId: string }) {
   }
 
   return (
-    <div className="flex gap-2 shrink-0">
+    <div className="flex gap-2 shrink-0 w-full sm:w-auto">
       <button
         onClick={() => act("approve")}
         disabled={pending}
-        className="text-xs px-3 py-1.5 rounded-md font-semibold disabled:opacity-50"
+        className="text-sm sm:text-xs px-3 py-2.5 sm:py-1.5 rounded-md font-semibold disabled:opacity-50 flex-1 sm:flex-none"
         style={{ background: "#059669", color: "white" }}
       >
         ✓ Approve
@@ -47,7 +47,7 @@ export function ReviewActions({ processorId }: { processorId: string }) {
       <button
         onClick={() => act("reject")}
         disabled={pending}
-        className="text-xs px-3 py-1.5 rounded-md font-semibold disabled:opacity-50"
+        className="text-sm sm:text-xs px-3 py-2.5 sm:py-1.5 rounded-md font-semibold disabled:opacity-50 flex-1 sm:flex-none"
         style={{ background: "white", color: "#DC2626", border: "1px solid #DC2626" }}
       >
         ✗ Reject

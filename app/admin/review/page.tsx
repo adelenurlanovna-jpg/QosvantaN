@@ -36,10 +36,10 @@ export default async function AdminReviewPage() {
       ) : (
         <div className="space-y-3">
           {items.map((p) => (
-            <div key={p.id} className="bg-white rounded-xl p-5 border" style={{ borderColor: "#E5E7EB" }}>
-              <div className="flex items-start justify-between gap-4 mb-2">
+            <div key={p.id} className="bg-white rounded-xl p-4 sm:p-5 border" style={{ borderColor: "#E5E7EB" }}>
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-2">
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1">
+                  <div className="flex items-center gap-2 mb-1 flex-wrap">
                     <h3 className="font-semibold" style={{ color: "#0D0F1E" }}>{p.name}</h3>
                     <span className="text-xs px-2 py-0.5 rounded-md"
                           style={{ background: "#F3F4F6", color: "#6B7280" }}>
@@ -51,10 +51,10 @@ export default async function AdminReviewPage() {
                     </span>
                   </div>
                   <p className="text-sm mb-2" style={{ color: "#4B5563" }}>{p.description}</p>
-                  <div className="flex gap-3 text-xs" style={{ color: "#9CA3AF" }}>
+                  <div className="flex gap-x-3 gap-y-1 text-xs flex-wrap" style={{ color: "#9CA3AF" }}>
                     {p.website_url && (
                       <a href={p.website_url} target="_blank" rel="noopener noreferrer"
-                         className="underline hover:text-gray-700">{p.website_url}</a>
+                         className="underline hover:text-gray-700 break-all">{p.website_url}</a>
                     )}
                     <span>Onboarding: {p.onboarding_days_min ?? "?"}–{p.onboarding_days_max ?? "?"}d</span>
                     <span>Scraped: {p.last_scraped_at ? new Date(p.last_scraped_at).toLocaleDateString() : "—"}</span>
