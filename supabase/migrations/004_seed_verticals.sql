@@ -1,0 +1,26 @@
+-- Seed: business verticals
+insert into verticals (name, display_name, risk_level) values
+('ecommerce',          'E-Commerce',              'low'),
+('saas',               'SaaS / Software',         'low'),
+('marketplace',        'Marketplace',             'low'),
+('fintech',            'Fintech / Neobank',       'low'),
+('travel',             'Travel & Hospitality',    'low'),
+('education',          'Education / EdTech',      'low'),
+('healthcare',         'Healthcare',              'medium'),
+('subscription',       'Subscription Billing',    'low'),
+('gambling',           'Online Gambling / Casino','very_high'),
+('sports_betting',     'Sports Betting',          'very_high'),
+('lottery',            'Lottery',                 'high'),
+('forex',              'Forex / CFD Trading',     'very_high'),
+('crypto_exchange',    'Crypto Exchange',         'high'),
+('adult',              'Adult Content',           'very_high'),
+('nutra',              'Nutra / Supplements',     'high'),
+('dating',             'Dating',                  'high'),
+('igaming',            'iGaming (General)',        'very_high'),
+('esports',            'Esports Betting',         'high'),
+('p2p',                'P2P Payments',            'high'),
+('remittance',         'Remittance',              'medium'),
+('nft',                'NFT / Digital Assets',    'high'),
+('defi',               'DeFi / Web3',             'high'),
+('offshore',           'Offshore / Shell',        'very_high')
+ON CONFLICT (name) DO NOTHING;

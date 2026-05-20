@@ -1,0 +1,12 @@
+[project]
+name = "qosvanta-scraper"
+version = "0.1.0"
+description = "Auto-scraper for payment processors using Gemini API"
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "requests>=2.32.0",
+]
+
+[tool.ruff]
+line-length = 100

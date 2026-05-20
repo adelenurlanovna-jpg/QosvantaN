@@ -1,0 +1,6 @@
+# Tell GitHub this is a TypeScript/Next.js project
+hooks/*.py linguist-detectable=false
+scripts/*.py linguist-detectable=false
+uv.lock linguist-detectable=false
+pyproject.toml linguist-detectable=false
+telegram_bot/*.py linguist-detectable=false

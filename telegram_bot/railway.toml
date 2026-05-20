@@ -1,0 +1,9 @@
+[build]
+builder = "nixpacks"
+
+[build.nixpacksConfig]
+pythonVersion = "3.12"
+
+[deploy]
+startCommand = "python main.py"
+restartPolicyType = "always"
