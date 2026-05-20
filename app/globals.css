@@ -15,6 +15,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* On mobile, reserve space below content so the floating chat button doesn't cover it. */
+@media (max-width: 640px) {
+  body {
+    padding-bottom: 84px;
+  }
+}
+
 /* Brand gradient text */
 .text-brand {
   background: linear-gradient(135deg, #3B82F6 0%, #7C3AED 100%);

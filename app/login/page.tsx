@@ -73,11 +73,11 @@ export default function LoginPage() {
 
   return (
     <main
-      className="min-h-screen flex items-center justify-center px-6 py-12"
+      className="min-h-screen flex items-center justify-center px-4 py-8 sm:px-6 sm:py-12"
       style={{ background: "linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%)" }}
     >
       <div
-        className="w-full max-w-[440px] rounded-2xl p-10"
+        className="w-full max-w-[440px] rounded-2xl p-6 sm:p-10"
         style={{
           background: "#FFFFFF",
           border: "1px solid rgba(15,23,42,0.08)",

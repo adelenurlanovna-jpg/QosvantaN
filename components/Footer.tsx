@@ -93,12 +93,12 @@ export default function Footer() {
               <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: "#334155" }}>
                 {col.title}
               </p>
-              <ul className="space-y-2.5">
+              <ul className="space-y-1 sm:space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-xs transition-colors hover:text-white"
+                      className="text-xs transition-colors hover:text-white inline-block py-1.5 sm:py-0"
                       style={{ color: "#475569" }}
                     >
                       {link.label}
