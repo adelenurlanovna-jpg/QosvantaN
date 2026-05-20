@@ -52,14 +52,14 @@ export default function RoutingLines({ dark = false }: { dark?: boolean }) {
 
     const draw = () => {
       ctx.clearRect(0, 0, W, H)
-      t += 0.004
+      t += 0.018
 
       THREADS.forEach((th) => {
         const phase = t * th.speed + th.phaseOffset
-        const wY = Math.sin(phase) * 0.065
-        const wY2 = Math.cos(phase * 0.72 + 0.5) * 0.045
-        const wC1 = Math.sin(phase * 0.58 + 1.0) * 0.05
-        const wC2 = Math.cos(phase * 0.48 + 2.0) * 0.05
+        const wY = Math.sin(phase) * 0.085
+        const wY2 = Math.cos(phase * 0.72 + 0.5) * 0.065
+        const wC1 = Math.sin(phase * 0.58 + 1.0) * 0.075
+        const wC2 = Math.cos(phase * 0.48 + 2.0) * 0.075
 
         const x0 = -30, x3 = W + 30
         const x1 = W * th.cy1x, x2 = W * th.cy2x

@@ -197,12 +197,6 @@ function HeroSection({ stats }: { stats: Stats }) {
             >
               ✓ {formatStat(stats.providers)} verified providers
             </div>
-            <div
-              className="absolute -left-4 bottom-16 px-3 py-2 rounded-xl text-xs font-medium"
-              style={{ background: "#FFFFFF", boxShadow: "0 4px 20px rgba(0,0,0,0.1)", border: "1px solid rgba(15,23,42,0.08)", color: "#7C3AED" }}
-            >
-              Crypto · Fiat · Local methods
-            </div>
           </div>
         </div>
       </div>
